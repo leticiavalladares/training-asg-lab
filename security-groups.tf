@@ -5,7 +5,7 @@ resource "aws_security_group" "app_server" {
 
   # INBOUND 
   ingress {
-    description = "Access to our Flask app"
+    description = "Access port 80"
     from_port   = 80
     to_port     = 80
     protocol    = "tcp"
@@ -27,12 +27,12 @@ resource "aws_security_group" "app_server" {
 
 resource "aws_security_group" "blue_green_lb" {
   name        = "blue-green-lb-sg"
-  description = "Allow connection"
+  description = "Allow connection to the Load Balancer"
   vpc_id      = data.aws_vpc.vpc.id
 
   # INBOUND 
   ingress {
-    description = "Access to our Flask app"
+    description = "Access to port 80"
     from_port   = 80
     to_port     = 80
     protocol    = "tcp"

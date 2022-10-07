@@ -19,24 +19,28 @@ variable "aws_region" {
 }
 
 variable "priv_subnet_a" {
-  description = "Private subnet"
+  description = "Name of private subnet a"
   type        = string
 }
 
 variable "priv_subnet_b" {
-    
+  description = "Name of private subnet b"
+  type        = string
 }
 
 variable "pub_subnet" {
-  
+  description = "Name of public subnet a"
+  type        = string
 }
 
 variable "vpc_name" {
-    
+  description = "Name of vpc"
+  type        = string
 }
 
 variable "instance_type" {
-
+  description = "Type of aws instance"
+  type        = string
 }
 
 variable "aws_pub_subnet_cidr_block_b" {
@@ -45,5 +49,6 @@ variable "aws_pub_subnet_cidr_block_b" {
 }
 
 variable "ig" {
-
+    description = "Name of internet gateway"
+    type        = string
 }

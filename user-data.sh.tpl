@@ -1,14 +1,13 @@
 #!/bin/bash
 
-# INSTALL APACHE2
-sudo apt-get update
+sudo apt-get update -y
 sudo apt-get install apache2 -y
 
 cat <<EOF > /var/www/html/index.html
 <html>
-<title>Talent-Academy ${version}</title>
+<title> Talent-Academy ${version}</title>
 <body style="background-color:${color};">
-<h1>This is the ${version} Website!!</h1>
+    <h1> This is the ${version} !! </h1>
 </body>
 </html>
 EOF
