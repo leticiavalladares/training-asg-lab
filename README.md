@@ -4,10 +4,12 @@
 
 This project is set to build a demo of the Autoscaling Group and Load Balancer in AWS:
 * Security Groups for LB and Servers
-* Öaunch Template
+* Launch Template
 * Target Groups
 * Load Balancer
 * Load Balancer Attachement
+
+![ALB and RDS ](https://user-images.githubusercontent.com/112868363/195099263-cf8f3173-3e1c-4f76-a244-991e8e51f027.png)
 
 ## Requirements
 
