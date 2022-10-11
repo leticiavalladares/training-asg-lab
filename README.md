@@ -1,5 +1,9 @@
-# training-asg-lab
+# Application Load Balancer and AutoScalation Group on AWS
 <!-- BEGIN_TF_DOCS -->
+## Status
+
+[![Terraform deployment for alb](https://github.com/leticiavalladares/training-asg-lab/actions/workflows/deploy-infra.yaml/badge.svg)](https://github.com/leticiavalladares/training-asg-lab/actions/workflows/deploy-infra.yaml)
+
 ## Context
 
 This project is set to build a demo of the Autoscaling Group and Load Balancer in AWS:
